@@ -10,7 +10,7 @@ if (html.classList.contains("light")) {
     
 } else {
     
-img.setAttribute("src", "./assets/avatar.png")
+img.setAttribute("src", "./assets/avatar-antes.png")
     
 }
 
