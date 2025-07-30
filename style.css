@@ -26,6 +26,11 @@
 body {
     
     background: var(--bg-url) no-repeat top center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
     }
 
 body * {
@@ -68,10 +73,12 @@ body * {
     z-index: 1;
     left: 0;
     transform: translateY(-50%);
+    cursor: pointer;
    }
    .light #switch button {
     right: 0;
     left: initial;
+    cursor: pointer;
    }
 
 #switch span {
@@ -142,4 +149,10 @@ body * {
    footer {
     padding: 24px 0;
     text-align: center;
+   }
+
+   @media screen and (max-width: 400px){
+    body {
+        height: auto;
+    }
    }
